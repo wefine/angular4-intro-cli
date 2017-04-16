@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { TodoListService } from "./services/todo-list.service";
+import { OrderByDoneAndDatePipe } from './pipes/order-by-done-and-date.pipe';
 
 @NgModule({
     declarations: [
         AppComponent,
-        TodoListComponent
+        TodoListComponent,
+        OrderByDoneAndDatePipe
     ],
     imports: [
         BrowserModule,
