@@ -14,7 +14,8 @@ export class TodoListComponent implements OnInit {
             let dueDate = new Date();
             let newItem: Item = {
                 title: 'item' + i,
-                dueDate: dueDate
+                dueDate: dueDate,
+                done: false
             };
 
             dueDate.setDate(dueDate.getDate() + i);
